@@ -1,0 +1,259 @@
+/* Professional Medical Prescription Stylesheet */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.report-container {
+  max-width: 210mm;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+}
+
+.meta-container {
+  padding: 25mm 20mm;
+}
+
+/* Doctor Information Section */
+.doctor-info {
+  text-align: center;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #000000;
+}
+
+.doctor-info h4 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman', serif;
+}
+
+.degrees {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.degrees li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.degrees li i {
+  font-style: normal;
+  margin-right: 8px;
+}
+
+.degrees li i:first-child {
+  font-weight: bold;
+}
+
+.doctor-info p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: normal;
+  text-align: right;
+  margin-top: 15px;
+}
+
+/* Prescription Section */
+.prescription-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.patient-info {
+  padding: 0;
+}
+
+.patient-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.personal-info,
+.medical-history {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.personal-info::before {
+  content: "PATIENT INFORMATION";
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.medical-history::before {
+  content: "MEDICAL HISTORY";
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.personal-info li,
+.medical-history li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-info li:last-child,
+.medical-history li:last-child {
+  border-bottom: none;
+}
+
+.personal-info li::before,
+.medical-history li::before {
+  content: none;
+}
+
+/* Treatment Section */
+.treatment {
+  padding: 0;
+}
+
+.treatment h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.medicine {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.medicine::before {
+  content: "PRESCRIPTION";
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.med-li{
+  padding: 2px 0;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.medicine  li ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.medicine  li ul li {
+  padding: 0;
+  font-size: 16px;
+  color: #000000;
+  flex: 1;
+}
+
+
+
+.tests {
+  list-style: none;
+  padding: 0;
+}
+
+.tests::before {
+  content: "RECOMMENDED TESTS";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tests li {
+  padding: 2px 0;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tests li:last-child {
+  border-bottom: none;
+}
+
+/* Next Appointment */
+.next-appt {
+  grid-column: 1 / -1;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  background: #f8f8f8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 2px;
+  background: #000000;
+  margin: 30px 0;
+}
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dialog {
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            width: 300px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML -->
+    <dialog id="editDialog">
+        <form method="dialog">
+            <h2>Edit Info</h2>
+            <label>Name: <input type="text" value="John Doe" /></label>
+            <label>Email: <input type="email" value="john@example.com" /></label>
+            <div class="actions">
+                <button value="cancel">Cancel</button>
+                <button value="save">Save</button>
+            </div>
+        </form>
+    </dialog>
+
+    <button onclick="document.getElementById('editDialog').showModal()">Open Dialog</button>
+</body>
+
+</html>

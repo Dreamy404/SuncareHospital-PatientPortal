@@ -1,0 +1,10 @@
+export {default as Home} from './Home';
+export {default as Doctors} from './Doctors';
+export {default as Login} from './Login';
+export {default as Register} from './Register';
+export {default as Appointment} from './Appointment';
+export {default as Doctor} from './Doctor';
+export {default as NotFound}from './NotFound';
+export {default as Services} from './Services';
+export {default as Patient} from './Patient';
+export {default as Test} from './Test';

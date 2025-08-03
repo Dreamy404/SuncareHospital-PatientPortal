@@ -1,0 +1,54 @@
+<div class="report-container">
+  <div class="meta-container">
+    <div class="doctor-info">
+      <h4>Doctor Name:{{doctor.name}}</h4>
+      <ul class="degrees">
+        {{#each doctor.degrees}}
+        <li>
+          <i>{{this.degree}}({{this.institute}})</i>
+        </li>
+        {{/each}}
+      </ul>
+      <p>Date:{{date}}</p>
+    </div>
+    <div class="prescription-part">
+      <div class="patient-info">
+        <ul class="personal-info">
+          <li>Name:{{patient.name}}</li>
+          <li>Age:{{patient.age}}</li>
+          <li>Gender:{{patient.gender}}</li>
+          <li>Address:{{patient.address}}</li>
+        </ul>
+        <ul class="medical-history">
+          <li>Weight:{{patient.weight}}</li>
+          <li>Blood pressure:{{patient.bp}}</li>
+          <li>Previous History(If any):{{patient.history}}</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <ul class="medicine">
+          {{#each medicines}}
+          <li class="med-li">
+            <ul>
+              <li>{{this.name}}</li>
+              <li>{{this.distribution}}</li>
+              <li>{{this.duration}}</li>
+            </ul>
+          </li>
+          {{/each}}
+        </ul>
+        <h4>hi:{{tests.length}}</h4>
+        <ul class="tests">
+          {{#each tests}}
+          <li>
+            {{this.name}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <p class="next-appt">Next Appointment:{{nextDate}}</p>
+    </div>
+  </div> 
+  <ul>
+  </ul>
+</div>

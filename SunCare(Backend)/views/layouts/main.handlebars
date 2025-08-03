@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PDF Report</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .pdf-body{
+        background: white;
+        padding: 5px;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hospital-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid darkgrey;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .hospital-logo{
+        width: 120px;
+        height: 100px;
+    }
+
+    .hospital-name{
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hospital-name h1{
+        color: #ffaa00;
+        font-size: 3rem;
+    }
+
+    .hospital-name h4{
+       color: #ffaa00;
+    }
+    
+    .body-container{
+        border:1px solid darkgrey;
+        margin-top: 5px;
+        padding: 2px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    </style>
+    {{{inlineCSS}}}
+  </head>
+  <body class="pdf-body">
+    <div class="hospital-container">
+        <img src={{logoSrc}} alt="Suncare Hospital" class="hospital-logo">
+        <div class="hospital-name">
+            <h1>Suncare Hospital</h1>
+            <h4>You Trusted Healthcare Partner</h4>
+        </div>
+    </div>
+    <div class="body-container">
+    {{{body}}}
+    </div>
+  </body>
+</html>
